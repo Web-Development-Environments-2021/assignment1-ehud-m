@@ -6,6 +6,13 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="viewport" content="with=device-width' initial-scale=1.0">
     <meta charset="utf-8">
+
+
+
+
+
+
+    
 </head>
 <body>
   <div id="menu">
@@ -124,7 +131,7 @@
   <br/>
   <br/>
   <br/>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/QfgVhE1M6ns?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/QfgVhE1M6ns?autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <br/>
   <br/>
   </section>
@@ -161,7 +168,21 @@
   <br/>
   <br/>
   <br/>
-  <h2 class="contact"><a href="mailto:ehudmal@post.bgu.ac.il">contact me</a></h2>
+    <div class="contactform">
+      <div class="form">
+        <h2>Contact Me</h2>
+        <input id="clientName"  type="text" class="field" placeholder="Your Name">
+        <input id="clientMail"  type="text" class="field" placeholder="Your Email">
+        <input id="clientPhone" type="text" class="field" placeholder="Phone">
+        <!-- <h4>Choose Emoji</h4> -->
+        <!-- <p>&#128512; &#128516; &#1x28525; &#128151;</p> -->
+        
+        <textarea id="emoj" placeholder="Message" class="field"></textarea>
+        <button class="btn" onclick="sendMail()">Send me an email</button>
+        
+      </div>
+  </div>
+  <!-- <h2 class="contact"><a href="mailto:ehudmal@post.bgu.ac.il">Send me an email</a></h2> -->
   <br/>
   <br/>
   <br/>
@@ -176,10 +197,34 @@
     });
   });
   </script>
-  <script type="text/javascript">
-  $(document).scroll(function() {
-      $('#menu').toggle($(this).scrollTop()>1000)
-  });​
-  </script>
+  <!-- emoji -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- cdjn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
+    <script type="text/javascript">
+    $(document).scroll(function() {
+        $('#menu').toggle($(this).scrollTop()>1000)
+    });​
+    </script>
+      <script>
+        
+        $('#emoj').emojioneArea({
+          pickerPosition:'top'
+        });
+      </script>
+    <!-- mail -->
+    <script>
+      function sendMail(){
+        let clientName = $('#clientName').val()
+        let clientMail = $('#clientMail').val()
+        let clientPhone = $('#clientPhone').val()
+        let emoj = $('#emoj').val()
+        let allToghether = clientName + "%0D%0A" + clientMail + "%0D%0A" + clientPhone + "%0D%0A" + emoj
+        window.location.href = "mailto:ehudmal@post.bgu.ac.il?subject=Mail request&body=" +allToghether
+      }
+    </script>
 </body>
 </html>
