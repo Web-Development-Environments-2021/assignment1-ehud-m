@@ -37,32 +37,36 @@ body{
 	position: fixed;
 	top: 0;
 	left: 0;
-	display: block;
+	display: inline-block;
 	width: 100%;
-	height: 20px;
+	height: 3%;
 	background: linear-gradient(rgba(1,1,1,1),rgba(1,1,1,1));
 	opacity: 80%;
 	list-style-type: none;
 	text-align: center;
-	font-size: 17px;
+	font-size: 19px;
 	padding:8px 15px;
 	z-index: 9999;	
+	font-family: "comic sans ms";
 }
 
 #menu :hover{
-	font-size: 20px;
-	background-color: rgb(62, 56, 110);
+	font-size: 25px;
+	background-color: rgb(62, 56, 110,0.3s);
 	transition: 0.5s;
 }
 
+
 .navBar{
-	/* position: relative; */
+	position:relative;
 	flex: 1;
+	display: block;
 	float: left;
-	display: inline-block;
+	justify-content: center;
 	margin-right: 3%;
+	left: 27.5%;
 	color: #fff;
-	text-decoration: none
+	
 }
 
 /* about */
@@ -71,10 +75,18 @@ body{
 	width: 60%;
 	color: rgb(0, 0, 0);
 	right: 20%;
-	font-size: 20px;
-	font-style: oblique;
+	font-size: 20px;	
 	position: relative;
+	font-family: 'Alef', sans-serif;
+	
 }
+
+#aboutPa{
+	background-color: rgb(177, 175, 175, 0.7);
+	border-radius: 25px;
+	
+}
+
 
 /* photos */
 
@@ -153,12 +165,17 @@ img {vertical-align: middle;}
 
 /* like button */
 
+#FollowBill{
+	font-family: 'Alef', sans-serif;
+}
+
 #like{
 	/* text-align: center; */
 	width: 18.4%;
 	right: 40.8%;
 	position: relative;
-	background-color: rgb(122, 117, 117);
+	font-family: 'Alef', sans-serif;
+	background-color: rgb(177, 175, 175, 0.4);
 }
 
 
@@ -182,33 +199,67 @@ img {vertical-align: middle;}
 	
 }
 
+#QgAH2{
+	font: 400 2em/150% 'Handlee', Helvetica, Sans-serif;
+	text-align: center;
+	color:rgb(0, 0, 0);
+	text-shadow: -1px 1px 0 rgb(47, 255, 248),
+	1px 1px 0 rgb(47, 255, 248),
+    1px -1px 0 rgb(47, 255, 248),
+    -1px -1px 0 rgb(47, 255, 248);
+}
+
+/* #QgAH2::after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 150px;
+    border-radius: 2px;
+    background-color: #000000;
+} */
+
 #webDif td{
 	position: relative;
 	border: 2px solid;
 	font-size: 50%;
+	font-family: 'Alef', sans-serif;
+	background-color: rgb(177, 175, 175, 0.7);
 }
 
 .fullLineTd{
 	text-align: right;
 }
 
-/* mail */
+/* mail --- contact*/
+
+h2{
+	font: 400 4em/150% 'Handlee', Helvetica, Sans-serif;
+	text-align: center;
+	color:rgb(0, 0, 0);
+	text-shadow: -1px 1px 0 rgb(47, 255, 248),
+	1px 1px 0 rgb(47, 255, 248),
+    1px -1px 0 rgb(47, 255, 248),
+    -1px -1px 0 rgb(47, 255, 248);
+}
+
 
 #contact{
 	/* background-color: #e5ff00;
 	opacity: 90%; */
 }
 
-.contact{
+/* .contact{
   height: 35px;
   width: 13%;
   margin: 1px 1px;
   background-color: #bbb;
   border-radius: 50%;
   background-color: #e5ff00;
-  display: inline-block;
-  
-}
+  display: inline-block;  
+} */
 
 .contactForm{
 	max-width: 850px;
@@ -222,7 +273,10 @@ img {vertical-align: middle;}
 }
 
 .form{
+	width: 50%;
 	padding: 25px 40px;
+	text-align: center;
+	margin: auto;
 }
 
 h2{
@@ -231,17 +285,17 @@ h2{
 	margin-bottom: 10px;
 }
 
-h2:after{
+/* h2:after{
 	content: '';
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
+    height: 2px;
+    width: 150px;
     border-radius: 2px;
-    background-color: #2ecc71;
-}
+    background-color: #000000;
+} */
 
 .field{
 	width: 100%;
@@ -260,14 +314,20 @@ h2:after{
 
 textarea{
 	min-height: 150px;
+	width: 50%;
+}
+#emoj{
+	width: 50%;
+	/* text-align: left; */
 }
 
 .btn{
-	width: 10%;
+	width: fit-content;
 	border-radius: 50%;
 	padding: 0.5rem 1rem;
-	background-color: #2ecc71;
+	background-color: rgb(177, 175, 175, 0.75);
 	color: #fff;
+	font-weight: bold;
 	font-size: 1.1rem;
 	border: none;
 	outline: none;
@@ -276,7 +336,7 @@ textarea{
 }
 
 .btn:hover{
-    background-color: #27ae60;
+    background-color: #6d6d6d;
 }
 
 .field:focus{

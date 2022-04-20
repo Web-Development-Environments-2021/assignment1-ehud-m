@@ -6,7 +6,10 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="viewport" content="with=device-width' initial-scale=1.0">
     <meta charset="utf-8">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alef:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Arima+Madurai:wght@500&family=Handlee&display=swap" rel="stylesheet">
 
 
 
@@ -24,18 +27,16 @@
     <li><a href="#spa" class="navBar">Q&A</a></li>
     <li><a href="#contact" class="navBar">Contact Me</a></li>
   </div>
+
         
   <section id="about" class="section">
   <br/>
+  <h2>About Me</h2>
   <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <p>
 
-    <h3 id="aboutBill"> שמי הוא ויליאם הנרי "ביל" גייטס השלישי 
+  <p id="aboutPa">
+
+  שמי הוא ויליאם הנרי "ביל" גייטס השלישי 
       נולדתי ב-28 באוקטובר 1955 בעיר סיאטל שבמדינת וושינגטון למשפחה אמידה פרוטסטנטית אדוקה.
       אני יזם, איל הון, משקיע, סופר ונדבן אמריקאי.
       בשנת 1975, ייסדתי ביחד עם פול אלן את מיקרוסופט, שהפכה לחברת התוכנה הגדולה בעולם.
@@ -47,7 +48,6 @@
       ב-2017 הקמתי קרן הון סיכון ביחד עם מארק צוקרברג וגדולים אחרים על מנת להשקיע בחברות סטרט-אפ צעירות.
       במרץ 2015 נשאתי הרצאה בוועידת TED על הצורך בהיערכות עולמית מול מגיפה אפשרית, ערכתי כנס ב-2019 בשם Event 201 בו דימיתי תרחיש של מגפה עולמית. לצערי, חודש לאחר הכנס פרצה מגפת וירוס הקורונה – שהובילה את אהוד היקר לכתוב את האתר הזה עלי.
       בשנת 2021 פרסמתי את ספרי – אסון אקלימי.
-    </h3>
   </p>
     <br/>
   <br/>
@@ -55,6 +55,7 @@
   </section>
 
   <section id="photos" class="section">
+    <h2>My photos</h2>
   <br/>
   <br/>
   <br/>
@@ -131,6 +132,7 @@
   </section>
 
   <section id="playlist" class="section">
+    <h2>Listen to my playlist</h2>
   <br/>
   <br/>
   <br/>
@@ -142,16 +144,17 @@
   </section>
 
   <section id="like" class="section">
-    <h1>Follow me, I am Bill Gates</h1>
+    <p id="FollowBill">Follow me, I am Bill Gates</p>
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v13.0" nonce="ynqehFXN"></script>
   <div class="fb-like" data-href="https://www.facebook.com/BillGates" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
   </section>
 
   <section id="qrcoder" class="section">
-  <br/>
-  <br/>
-  <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h2>My QR Code</h2>
   <br/>
   <img src="SQR.jpg" alt="" height="200" width="200">
   <br/>
@@ -161,8 +164,8 @@
   </section>
 
   <section id="spa" class="section">
-  <br/>
-  <br/>
+    <h3 id="QgAH2">Q&A</h3>
+
 
   <table id="webDif">
     <tr>
@@ -193,28 +196,23 @@
     <tr><td class="fullLineTd" colspan="4">uc3:ב-web 1 חברה תפרסם תוכן של איך להכין חביתה וב-web 2 אדם יפרסם סרטון של הכנת חביתה</td></tr>
   </table>
   <br/>
-  <br/>
-  <br/>
+ 
   </section>
 
   <section id="contact" class="section">
   <br/>
-  <br/>
-  <br/>
+
     <div class="contactform">
       <div class="form">
         <h2>Contact Me</h2>
         <input id="clientName"  type="text" class="field" placeholder="Your Name">
         <input id="clientMail"  type="text" class="field" placeholder="Your Email">
-        <input id="clientPhone" type="text" class="field" placeholder="Phone">
-        <!-- <h4>Choose Emoji</h4> -->
-        <!-- <p>&#128512; &#128516; &#1x28525; &#128151;</p> -->
-        
+        <input id="clientPhone" type="text" class="field" placeholder="Phone"> 
         <textarea id="emoj" placeholder="Message" class="field"></textarea>
-        <button class="btn" onclick="sendMail()">Send me an email</button>
         
       </div>
-  </div>
+    </div>
+    <button class="btn" onclick="sendMail()">Send Mail</button>
   <!-- <h2 class="contact"><a href="mailto:ehudmal@post.bgu.ac.il">Send me an email</a></h2> -->
   <br/>
   <br/>
